@@ -1,7 +1,7 @@
 # PHYS265
 
 
-In this class ...
+In this class we will use python and git ...
 
 ## Python
 
@@ -12,10 +12,13 @@ Two common way to execute python codes are
 
 Interactive inside a browser
 
+*a nice figure will go here*
+
 ### 2. Spyder
 
 Interactive in a special GUI, much like MATLAB
 
+*a nice figure will go here*
 
 ## Codes
 
@@ -31,8 +34,8 @@ Here are some places to find Open Source codes in Physics and Astronomy
 
 ## Software Carpentry
 
-Also some self-guides (OS agnostic) lessons on:
+Also some self-guided and OS agnostic lessons on:
 
-1. unix shell (even on Windows) :  https://swcarpentry.github.io/shell-novice/
-2. python : https://swcarpentry.github.io/python-novice-inflammation/
-3. git : https://swcarpentry.github.io/git-novice/
+1. Unix shell (even on Windows) :  https://swcarpentry.github.io/shell-novice/
+2. Python : https://swcarpentry.github.io/python-novice-inflammation/
+3. Git : https://swca rpentry.github.io/git-novice/
