@@ -38,4 +38,5 @@ Also some self-guided and OS agnostic lessons on:
 
 1. Unix shell (even on Windows) :  https://swcarpentry.github.io/shell-novice/
 2. Python : https://swcarpentry.github.io/python-novice-inflammation/
-3. Git : https://swca rpentry.github.io/git-novice/
+3. Git : https://swcarpentry.github.io/git-novice/
+ 
