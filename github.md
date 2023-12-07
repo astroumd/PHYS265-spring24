@@ -1,12 +1,12 @@
 # git and github
 
-**git** is arguably the most common Version Control System on the market, and
+[**git**](https://xkcd.com/1597/) is arguably the most common Version Control System on the market, and
 very popular with Open Source Software. https://github.com is one of the major
 contenders, although gitlab and bitbucket offer competative interfaces to
 maintain your git repository.
 
-In this class you will learn how to use github to maintain a repository, but if you
-already use another host, feel free to use it.
+In this class you will learn git, and how to use github to maintain a git repository, but if you
+already use another host, feel free to use it. We will use git to submit homework.
 
 If these terms makes sense to you, we will not use git branches, or learn how to submit
 a pull request, or force main branch protection.
