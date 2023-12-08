@@ -24,7 +24,7 @@ and
 [*Creating a GitHub Account*](https://swcarpentry.github.io/git-novice/#creating-a-github-account)
 to get your started on Linux, Mac, or Windows.
 
-There are two methods how to automate your authentication with github:
+To summarize, there are two methods how to automate your authentication with github:
 
 ### 1. Personal Access Tokens
 
@@ -45,15 +45,15 @@ Settings -> SSH and GPG keys -> new SSH key
 
 https://github.com/settings/keys
 
-*There is more to come here how keys are generated*
+*There is more to come here how keys are generated with **ssh-keygen** and **ssh-copy-id**
 
 ## Class Repository
 
-You actually don't need a github account to get a public repository, e.g.
+You actually don't need a github account to get a public repository, e.g. this will *always* work:
 
       git clone https://github.com/astroumd/PHYS265-spring24
 
-or if you have setup your git using ssh keys
+or if you have setup your git using ssh keys, this one will work as well:
 
       git clone git@github.com:astroumd/PHYS265-spring24.git
 
@@ -64,7 +64,7 @@ Typically you will start at https://github.com/new to create a new repository, b
 sure the **Private** button has been checked, and let it create a default **README.md** file!
 After this github will throw you into your new repository.
 
-Then add the instructors
+Then add the instructors as *collaborators*:
 
       Settings (top right) -> Collaborators (top of left column) -> Add People
 
@@ -72,4 +72,4 @@ where you add the instructors:
 
       gcarterhall
       teuben
-      our_TA
+      our_TA_TBD
