@@ -38,7 +38,7 @@ Typically you will get a token, something like
 
       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
 
-that you will then use as a password. When it was generated, you also had to give oit a lifetime. Pick one year,
+that you will then use as a password. When it was generated, you also had to give it a lifetime. Pick one year,
 or anything you prefer.
 
 ### 2. SSH keys
@@ -49,7 +49,7 @@ https://github.com/settings/keys
 
 *There is more to come here how keys are generated with **ssh-keygen** and **ssh-copy-id**
 
-## Class Repository
+## Class Repositories
 
 You actually don't need a github account to get a public repository, e.g. this will *always* work:
 
@@ -59,8 +59,9 @@ or if you have setup your git using ssh keys, this one will work as well:
 
       git clone git@github.com:astroumd/PHYS265-spring24.git
 
+### Homework - method 1
 
-but to share your class work with the instructors, *your* repository needs to be private!
+To share your class work with the instructors, *your* repository needs to be private!
 
 Typically you will start at https://github.com/new to create a new repository, but make
 sure the **Private** button has been checked, and let it create a default **README.md** file!
@@ -75,3 +76,13 @@ where you add the instructors:
       gcarterhall
       teuben
       our_TA_TBD
+
+### Homework - method 2
+
+You can also fork our own template. For this, sign in to **github** and navigate to
+
+      https://github.com/astroumd/PHYS265-spring24-hw
+
+and find the **fork** button in the top right corner of the page. In the README file you
+will find some instructions to make your forked repo a *private* one, and give the
+instructors *read* permission to pull your homework.
