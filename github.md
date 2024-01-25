@@ -1,18 +1,44 @@
 # git and github
 
-[**git**](https://xkcd.com/1597/) is arguably the most common Version Control System
-on the market
-and very popular with Open Source Software. https://github.com is one of the
-[major contenders](https://en.wikipedia.org/wiki/Comparison_of_source-code-hosting_facilities),
-although gitlab and bitbucket offer competative interfaces to
-maintain your git repository.
+[**git**](https://xkcd.com/1597/) is arguably the most common Version
+Control System on the market and very popular with Open Source
+Software. https://github.com is one of the [major
+contenders](https://en.wikipedia.org/wiki/Comparison_of_source-code-hosting_facilities),
+although gitlab and bitbucket offer competative interfaces to maintain
+your git repository, although for private use you can use git on
+personal laptop or a home network. Obviously for collaboration something
+like *github* is the way to go.
 
-In this class you will learn git, and how to use github to maintain a git repository, but if you
-already use another host, feel free to use it. We will use git to submit homework.
+In this class you will learn git, and how to use github to maintain a
+git repository, but if you already use another host, feel free to use
+it. We will use git to submit some of the homework.
 
-If these terms makes sense to you, we will not use git branches, or learn how to submit
-a pull request, or force main branch protection.
-These will be available for extra credit though.
+If these terms makes sense to you, we will not use git branches, or
+learn how to submit a pull request, or force main branch protection.
+
+## Installation
+
+### Linux / Mac
+
+With Linux, Mac or Window+WSL git is already included. Try the command **git --version** in
+a terminal and you should see something like 2.34.1 - the exact version does not matter for
+us very much.
+
+### Windows
+
+On native Windows git can be installed
+as part of the
+[**bash shell**](https://carpentries.github.io/workshop-template/install_instructions/#shell)
+via https://gitforwindows.org.  
+Microsoft has aquired github.com a few years ago, so one would be expect that in due time
+these overly complicated git installation on windows will be simplified.   The bash-shell link
+give more details, but here is a run-down of the steps.
+
+1. download git via https://gitforwindows.org , it will ask you to run this "git exe" file to install it
+2. pretty much follow the defaults of what the installation wants to do.   There is an option to select
+   a default editor, **nano** is probably the best, but in our class we use the spyder editor for code.
+
+3. In the end there is now a "git bash" program available to you.
 
 
 ## Authentication
@@ -75,7 +101,7 @@ where you add the instructors:
 
       gcarterhall
       teuben
-      our_TA_TBD
+      sjean022
 
 ### Homework - method 2
 
