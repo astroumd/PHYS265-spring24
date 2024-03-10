@@ -1,1 +1,2 @@
 Maybe this is a place for other notes. Besides the README that is.
+It's perhaps too easy to accidentally add new files to GitHub which were not intended to be pushed to GitHub. Pay attention on the tagged files in the left tab.
