@@ -58,3 +58,5 @@ for power users with fast fingers.
    it to the **main** branch (blue button bottom left), after which on the right side you will see your
    pending actions, in this case **Push Origin**.
 
+
+This document printed from: https://github.com/astroumd/PHYS265-spring24/blob/main/github.md
