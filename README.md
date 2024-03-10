@@ -40,3 +40,11 @@ Also some self-guided and OS agnostic lessons on:
 2. Python : https://swcarpentry.github.io/python-novice-inflammation/
 3. Git : https://swcarpentry.github.io/git-novice/
  
+## Offline documentation
+
+The spyder tool we are using has excellent help on python: both syntax and API.
+But if you are
+
+* Zeal (for Linux)
+* Dash (for Mac) - free alternatives are:  dasht and devbook
+* XXX (for Windows)
