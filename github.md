@@ -31,18 +31,19 @@ GUI applications to browse a local repo, e.g. **gitg** and **gitk**.
 
 ### CLI: Linux / Mac / Win
 
-With Linux, Mac or Window+WSL git is already included. Try the command **git --version** in
+With Linux, Mac or Window+WSL (Windows subsystem for Linux)
+git is already included. Try the command **git --version** in
 a terminal and you should see something like 2.34.1 - the exact version does not matter for
 us very much. There is also an official "Github CLI", usually installed as the command
-**gh**.
+**gh**.  Nobody in class should need to use  the CLI version, though it can be useful
+for power users with fast fingers.
 
 
 ## Steps
 
-0. Create an account on github.com and share your username with the instructors
+0. Create an account on github.com and share your username with the instructors.
 
-1. Clone an existing repo.   Try https://github.com/astroumd/PHYS265-spring24  - Note the file you are
-   reading is
+1. Clone an existing repo.   Try https://github.com/astroumd/PHYS265-spring24 
 
 2. Update this repo with a **pull**, though on Desktop it's called **fetch**. Most often there is nothing.
    Look at the *History* tab
@@ -50,7 +51,9 @@ us very much. There is also an official "Github CLI", usually installed as the c
 
 3. Create your own new repo for Lab1, and create a README file. Suggested name is PHYS265-spring24-lab1,
    but feel free to pick any name.
-   Set permissions (to be discussed if we are using private or public)
+   Set permissions (to be discussed if we are using private or public).
 
-4. Modify the README file, and put your name in it.  Upload this file back to github.
+4. Modify the README file, and put your name in it.  Upload this file back to github but first committing
+   it to the **main** branch (blue button bottom left), after which on the right side you will see your
+   pending actions, in this case **Push Origin**.
 
