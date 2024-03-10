@@ -47,9 +47,10 @@ for power users with fast fingers.
 
 2. Update this repo with a **pull**, though on Desktop it's called **fetch**. Most often there is nothing.
    Look at the *History* tab
-   on the top left when the latest file was modified/added.
+   on the top left when the latest file was modified/added. You can also view differences between
+   successive versions of the files.
 
-3. Create your own new repo for Lab1, and create a README file. Suggested name is PHYS265-spring24-lab1,
+3. Create your own new repo for Lab1, and create a README file. Suggested name is **PHYS265-spring24-lab1**,
    but feel free to pick any name.
    Set permissions (to be discussed if we are using private or public).
 
