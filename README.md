@@ -6,7 +6,7 @@ In this class we will use python and git ...
 ## Python
 
 We recommend installing anaconda python from [Anaconda](https://www.anaconda.com/).
-Two common way to execute python codes are
+Two common way to execute python codes are:
 
 ### 1. Jupyter Notebook / Lab
 
@@ -43,7 +43,7 @@ Also some self-guided and OS agnostic lessons on:
 ## Offline documentation
 
 The spyder tool we are using has excellent help on python: both syntax and API.
-But if you are
+But if you want something in parallel:
 
 * Zeal (for Linux)
 * Dash (for Mac) - free alternatives are:  dasht and devbook
