@@ -45,18 +45,33 @@ for power users with fast fingers.
 
 1. Clone an existing repo.   Try https://github.com/astroumd/PHYS265-spring24 
 
-2. Update this repo with a **pull**, though on Desktop it's called **fetch**. Most often there is nothing.
+2. Update this repo with a **pull**, on Desktop it's called **fetch**. Most often there is nothing.
    Look at the *History* tab
    on the top left when the latest file was modified/added. You can also view differences between
    successive versions of the files.
 
-3. Create your own new repo for Lab1, and create a README file. Suggested name is **PHYS265-spring24-lab1**,
-   but feel free to pick any name.
-   Set permissions (to be discussed if we are using private or public).
+3. Create your own new repo for Lab1, and add a README file from the menu. Or create one later.
+   Suggested name is **PHYS265-spring24-lab1**,   but feel free to pick any name.
+   When asked, pick a private repo.
 
 4. Modify the README file, and put your name in it.  Upload this file back to github but first committing
    it to the **main** branch (blue button bottom left), after which on the right side you will see your
    pending actions, in this case **Push Origin**.
 
+5. Since your repo is private, you'll need to give permission to the graders to read your code. Do this
+   from the web interface of your repo:
+
+        Settings (top right) -> Collaborators (top of left column) -> Add People
+
+   where you add your instructors:
+
+        gcarterhall
+        sjean022
+        teuben
+
+6. (optional) Create a public README.md file in your own github.com/yourname/yourname repository.
+   For example look at my barebones one   https://github.com/teuben/teuben/   but there are many
+   better examples online.
 
 This document printed from: https://github.com/astroumd/PHYS265-spring24/blob/main/github.md
+
