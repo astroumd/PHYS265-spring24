@@ -73,10 +73,12 @@ def zero(x, y, level=0, debug=False):
         
         Note that 0.0 is returned when the Y array didn't seem to cross level
     """
-    z = y - level          # thus find the 0 crossing in xz
-    n = len(t)             # t and x should have the same length
+    z = y - level          # thus find the 0 crossing in z
+    n = len(x)             # y and x should have the same length
+    if len(x) != len(y):   # y and x should have the same length
+        print("ZERO: input array are not the same length")
+    if debug: print(f"ZERO: array has {n} elements. First and last value {z[0]} {z[-1]}")   
     s0 = np.sign(z[0])
-    if debug: print(f"Array has {n} elements. First and last value {z[0]} {z[-1]}")
     for i in range(1,n):
         if np.sign(z[i]) != s0:
             if debug: print(f"Changed sign at {i}/{n}")
@@ -87,7 +89,7 @@ def zero(x, y, level=0, debug=False):
         # linear interpolation
         return x[i-1] - z[i-1]*(x[i]-x[i-1])/(z[i]-z[i-1])
     # if it failed to find a change of sign, return 0
-    if debug: print("Never found a crossing point")
+    if debug: print("ZERO: never found a crossing point")
     return 0.0
 
 def density(r, n=0):
