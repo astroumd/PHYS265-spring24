@@ -42,7 +42,7 @@ to curve_fit().
 
 Your instructors may give you a dataset to fit and compare.
 
-### Browsing "python" on ascl.net
+### 2. Browsing "python" on ascl.net
 
 
 This list is derived from https://ascl.net/code/search/python
