@@ -1,31 +1,41 @@
-# 265 Code Project (draft)
+# PHYS265 Code Project (draft)
 
 
-This code project is an alternative to taking the 3rd midterm exam.
+This *Code Project* is an alternative to taking the 3rd midterm exam
+on May 1st.
 In this project you will select a (python based) open source project.
-You will need to learn how to install and use it, and produce
-a summary about the code, show some results and some figures to illustrate
-your finding.
+It is your task to evaluate this software package by using it.
+**Due date will also be May 1st.**
+
+You will need to learn how to install and use it, show some results
+and some figures to illustrate your findings. All of this will be
+summarized in a PDF based report. You also need to keep your code
+examples, and a README to make your findings reproducable. We will use
+your existing github repository that you used for lab1.
 
 You are welcome to suggest your own project, but you will need to
-run this by your instructors first. We also have our own list, listed
-below.
+run this by your instructors first. We also have our own list,
+some of them are listed below.
 
 ## Writeup
 
-It is your task to evaluate a software package.
+
 Some packages may not work well on windows, and only on mac or linux. Some
 requires a lot of extra software, which make it too complex to install,
-or require a supercomputer.  Select something
+or require a supercomputer.  Select something simple, and always run it
+by your instructors for approval.
 
 Some questions to answer:
 
+- what does the package do?
 - how old is the package?
+- what about its geneology?
 - is it still maintained, and by the original authors?
-- is it pure python? or does it need a c/C++/fortran library?
-- does it install via the "standard" pip/conda, or is it complex?
+- is it pure python? or does it need accompanying C/C++/Fortran code?
+- does it install via the "standard" pip/conda, or is it more complex?
 - what is the input to the package? Just parameters, or dataset(s)?
 - what is the output of the package? Just parameters, or dataset(s)?
+- does the package produce figures, or are you on your own? Is matplotlib used?
 
 ## Suggested projects
 
@@ -40,7 +50,7 @@ of robust code developed in other languages (mostly Fortran, IDL and C/C++).
 Your task is to find the python equivalent of MPFIT or LMFIT, and compare this
 to curve_fit().
 
-Your instructors may give you a dataset to fit and compare.
+Your instructors may give you a dataset to fit and compare results.
 
 ### 2. Browsing "python" on ascl.net
 
