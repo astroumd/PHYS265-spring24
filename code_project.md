@@ -2,31 +2,52 @@
 
 
 This code project is an alternative to taking the 3rd midterm exam.
-In this project you will select from a list of python based project,
-learn how to install and use it, and write a summary about the code.
-Details on this later.
+In this project you will select a (python based) open source project.
+You will need to learn how to install and use it, and produce
+a summary about the code, show some results and some figures to illustrate
+your finding.
 
 You are welcome to suggest your own project, but you will need to
-run this by your instructors. We also have our own list, extract
-by searching on **ascl.net** for **python**
+run this by your instructors first. We also have our own list, listed
+below.
 
+## Writeup
+
+It is your task to evaluate a software package.
+Some packages may not work well on windows, and only on mac or linux. Some
+requires a lot of extra software, which make it too complex to install,
+or require a supercomputer.  Select something
+
+Some questions to answer:
+
+- how old is the package?
+- is it still maintained, and by the original authors?
+- is it pure python? or does it need a c/C++/fortran library?
+- does it install via the "standard" pip/conda, or is it complex?
+- what is the input to the package? Just parameters, or dataset(s)?
+- what is the output of the package? Just parameters, or dataset(s)?
 
 ## Suggested projects
 
-### Fitting
+### 1. Fitting
 
 Although our recommended fitting module is curve_fit(), much like
 we saw for quad() and solve_ivp() they are based on a long history
-of robust code developed in other languages (mostly Fortran, IDL and C/C++)
+of robust code developed in other languages (mostly Fortran, IDL and C/C++).
 
 - geneology: LMFIT (original MINPACK-1), MPFIT (IDL), cmpfit (), pycmpfit (python)
 
+Your task is to find the python equivalent of MPFIT or LMFIT, and compare this
+to curve_fit().
+
+Your instructors may give you a dataset to fit and compare.
 
 ### Browsing "python" on ascl.net
 
 
 This list is derived from https://ascl.net/code/search/python
-
+What you see below is a first cut, and as you might read this draft,
+may well disappear in the final version.
 
 - PDRT: Photo Dissociation Region Toolbox - https://ascl.net/1102.022
 
