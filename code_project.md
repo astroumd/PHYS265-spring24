@@ -25,5 +25,80 @@ of robust code developed in other languages (mostly Fortran, IDL and C/C++)
 ### Browsing "python" on ascl.net
 
 
+This list is derived from https://ascl.net/code/search/python
 
+
+- PDRT: Photo Dissociation Region Toolbox - https://ascl.net/1102.022
+
+- PySpecKit: Python Spectroscopic Toolkit - https://ascl.net/1109.001	
+
+- PyModelFit: Model-fitting Framework and GUI Tool - https://ascl.net/1109.010
+
+- PyEphem: Astronomical Ephemeris for Python	
+
+- Astropysics: Astrophysics utilities for python	
+
+- EzGal: A Flexible Interface for Stellar Population Synthesis Models	
+
+- Aegean: Compact source finding in radio images	
+
+- pNbody: A python parallelized N-body reduction toolbox	
+
+- emcee: The MCMC Hammer	
+
+- Galactus: Modeling and fitting of galaxies from neutral hydrogen (HI) cubes	
+
+- Astropy: Community Python library for astronomy	
+
+- AstroAsciiData: ASCII table Python module	
+
+- SunPy: Python for Solar Physicists		
+
+- pyExtinction: Atmospheric extinction
+
+- Gammapy: Python toolbox for gamma-ray astronomy	
+
+- galpy: Galactic dynamics package	
+
+- PyBDSF: Python Blob Detection and Source Finder	
+
+- pYSOVAR: Lightcurves analysis	
+
+- PyTransit: Transit light curve modeling	
+
+- pyro: Python-based tutorial for computational methods for hydrodynamics	
+
+- SavGolFilterCov: Savitzky Golay filter for data with error covariance	
+
+- POPPY: Physical Optics Propagation in PYthon	
+
+- Lmfit: Non-Linear Least-Square Minimization and Curve-Fitting for Python	
+
+- PRECESSION: Python toolbox for dynamics of spinning black-hole binaries	
+
+- Gala: Galactic astronomy and gravitational dynamics	
+
+- PROFILER: 1D galaxy light profile decomposition	
+
+- SETI-EC: SETI Encryption Code	
+
+- pydftools: Distribution function fitting in Python	
+
+- Photon: Python tool for data plotting	
+
+- oscode: Oscillatory ordinary differential equation solver	
+
+- GWpy: Python package for studying data from gravitational-wave detectors	
+
+- seaborn: Statistical data visualization	
+
+- pyFFTW: Python wrapper around FFTW	
+
+- Citlalicue: Create and manipulate stellar light curves	
+
+- CosmosCanvas: Useful color maps for different astrophysical properties	
+
+- CONCEPT: COsmological N-body CodE in PyThon	
+
+- A pseudo GUI with pyplot - might be a nice idea, but only in chinese 
 
