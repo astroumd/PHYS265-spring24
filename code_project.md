@@ -71,11 +71,13 @@ may well disappear in the final version.
 
 - EzGal: A Flexible Interface for Stellar Population Synthesis Models	
 
-- Aegean: Compact source finding in radio images	
-
 - pNbody: A python parallelized N-body reduction toolbox	
 
-- emcee: The MCMC Hammer	
+- corner.py: Corner plots
+
+- emcee: The MCMC Hammer (possibly most used code)	
+
+- Aegean: Compact source finding in radio images	
 
 - Galactus: Modeling and fitting of galaxies from neutral hydrogen (HI) cubes	
 
