@@ -65,37 +65,35 @@ may well disappear in the final version.
 
 - PyModelFit: Model-fitting Framework and GUI Tool - https://ascl.net/1109.010
 
-- PyEphem: Astronomical Ephemeris for Python	
+- PyEphem: Astronomical Ephemeris for Python - https://ascl.net/1112.014	
 
-- Astropysics: Astrophysics utilities for python	
+- EzGal: A Flexible Interface for Stellar Population Synthesis Models - https://ascl.net/1208.021	
 
-- EzGal: A Flexible Interface for Stellar Population Synthesis Models	
+- pNbody: A python parallelized N-body reduction toolbox - https://ascl.net/1302.004	
 
-- pNbody: A python parallelized N-body reduction toolbox	
+- corner.py: Corner plots - https://ascl.net/1702.002
 
-- corner.py: Corner plots
+- emcee: The MCMC Hammer (possibly most used code) - https://ascl.net/1303.002	
 
-- emcee: The MCMC Hammer (possibly most used code)	
+- Aegean: Compact source finding in radio images - https://ascl.net/1212.009	
 
-- Aegean: Compact source finding in radio images	
+- Galactus: Modeling and fitting of galaxies from neutral hydrogen (HI) cubes - https://ascl.net/1303.018
 
-- Galactus: Modeling and fitting of galaxies from neutral hydrogen (HI) cubes	
+- Astropy: Community Python library for astronomy - https://ascl.net/1304.002	
 
-- Astropy: Community Python library for astronomy	
+- AstroAsciiData: ASCII table Python module - https://ascl.net/1311.003	
 
-- AstroAsciiData: ASCII table Python module	
+- SunPy: Python for Solar Physicists - https://ascl.net/1401.010		
 
-- SunPy: Python for Solar Physicists		
+- pyExtinction: Atmospheric extinction - https://ascl.net/1403.002
 
-- pyExtinction: Atmospheric extinction
+- Gammapy: Python toolbox for gamma-ray astronomy - https://ascl.net/1711.014	
 
-- Gammapy: Python toolbox for gamma-ray astronomy	
+- galpy: Galactic dynamics package - https://ascl.net/1411.008	
 
-- galpy: Galactic dynamics package	
+- PyBDSF: Python Blob Detection and Source Finder - https://ascl.net/1502.007	
 
-- PyBDSF: Python Blob Detection and Source Finder	
-
-- pYSOVAR: Lightcurves analysis	
+- pYSOVAR: Lightcurves analysis	- https://ascl.net/1503.008
 
 - PyTransit: Transit light curve modeling	
 
