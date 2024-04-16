@@ -95,41 +95,46 @@ may well disappear in the final version.
 
 - pYSOVAR: Lightcurves analysis	- https://ascl.net/1503.008
 
-- PyTransit: Transit light curve modeling	
+- PyTransit: Transit light curve modeling - https://ascl.net/1505.024	
 
-- pyro: Python-based tutorial for computational methods for hydrodynamics	
+- pyro: Python-based tutorial for computational methods for hydrodynamics - https://ascl.net/1507.018
 
-- SavGolFilterCov: Savitzky Golay filter for data with error covariance	
+- SavGolFilterCov: Savitzky Golay filter for data with error covariance	- https://ascl.net/1601.012
 
-- POPPY: Physical Optics Propagation in PYthon	
+- POPPY: Physical Optics Propagation in PYthon - https://ascl.net/1602.018
 
-- Lmfit: Non-Linear Least-Square Minimization and Curve-Fitting for Python	
+- Lmfit: Non-Linear Least-Square Minimization and Curve-Fitting for Python - https://ascl.net/1606.014	
 
-- PRECESSION: Python toolbox for dynamics of spinning black-hole binaries	
+- PRECESSION: Python toolbox for dynamics of spinning black-hole binaries - https://ascl.net/1611.004	
 
-- Gala: Galactic astronomy and gravitational dynamics	
+- Gala: Galactic astronomy and gravitational dynamics -	https://ascl.net/1707.006
 
-- PROFILER: 1D galaxy light profile decomposition	
+- PROFILER: 1D galaxy light profile decomposition - https://ascl.net/1705.010	
 
-- SETI-EC: SETI Encryption Code	
+- SETI-EC: SETI Encryption Code	- https://ascl.net/1803.009
 
-- pydftools: Distribution function fitting in Python	
+- pydftools: Distribution function fitting in Python - https://ascl.net/code/v/1940
 
-- Photon: Python tool for data plotting	
+- Photon: Python tool for data plotting	- https://ascl.net/1901.007
 
-- oscode: Oscillatory ordinary differential equation solver	
+- oscode: Oscillatory ordinary differential equation solver - https://ascl.net/1908.012	
 
-- GWpy: Python package for studying data from gravitational-wave detectors	
+- GWpy: Python package for studying data from gravitational-wave detectors - https://ascl.net/1912.016	
 
-- seaborn: Statistical data visualization	
+- seaborn: Statistical data visualization - https://ascl.net/2012.015	
 
-- pyFFTW: Python wrapper around FFTW	
+- Citlalicue: Create and manipulate stellar light curves - https://ascl.net/2202.014	
 
-- Citlalicue: Create and manipulate stellar light curves	
+- CosmosCanvas: Useful color maps for different astrophysical properties - https://ascl.net/2401.005	
 
-- CosmosCanvas: Useful color maps for different astrophysical properties	
+- CONCEPT: COsmological N-body CodE in PyThon - https://ascl.net/2306.035	
 
-- CONCEPT: COsmological N-body CodE in PyThon	
+## Installation Guidelines
 
-- A pseudo GUI with pyplot - might be a nice idea, but only in chinese 
+Most python packages can be installed with pip.   Within spyder this would be the following
+command (but read their README for guidelines):
 
+      !pip install ThePackage
+
+Some packages will rely on you having a C compiler, and if that fails, it's better to find
+another package before spending too much time solving compiler and linked problems.
