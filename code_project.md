@@ -1,4 +1,4 @@
-# PHYS265 Code Project (draft)
+# PHYS265 Code Project (draft-2)
 
 
 This *Code Project* is an alternative to taking the 3rd midterm exam
@@ -9,9 +9,10 @@ It is your task to evaluate this software package by using it.
 
 You will need to learn how to install and use it, show some results
 and some figures to illustrate your findings. All of this will be
-summarized in a PDF based report. You also need to keep your code
+summarized in a report presented in PDF. You also need to keep your code
 examples, and a README to make your findings reproducable. We will use
-your existing github repository that you used for lab1.
+a new folder **code3** inside your existing github repository that
+you used for **lab1** and **lab2**.
 
 You are welcome to suggest your own project, but you will need to
 run this by your instructors first. We also have our own list,
@@ -19,17 +20,15 @@ some of them are listed below.
 
 ## Writeup
 
-
-Some packages may not work well on windows, and only on mac or linux. Some
+Some packages may not work well on Windows, and only on Mac or Linux. Some
 requires a lot of extra software, which make it too complex to install,
 or require a supercomputer.  Select something simple, and always run it
 by your instructors for approval.
 
 Some questions to answer:
 
-- what does the package do?
-- how old is the package?
-- what about its geneology?
+- name of the package, anad what does the package do?
+- how old is the package? what about its geneology?
 - is it still maintained, and by the original authors?
 - is it pure python? or does it need accompanying C/C++/Fortran code?
 - does it install via the "standard" pip/conda, or is it more complex?
@@ -43,7 +42,7 @@ Some questions to answer:
 
 Although our recommended fitting module is curve_fit(), much like
 we saw for quad() and solve_ivp() they are based on a long history
-of robust code developed in other languages (mostly Fortran, IDL and C/C++).
+of robust codes developed in other languages (mostly Fortran, IDL and C/C++).
 
 - geneology: LMFIT (original MINPACK-1), MPFIT (IDL), cmpfit (), pycmpfit (python)
 
@@ -52,10 +51,10 @@ to curve_fit().
 
 Your instructors may give you a dataset to fit and compare results.
 
-### 2. Browsing "python" on ascl.net
+### 2. Browsing for "python" codes on ASCL
 
 
-This list is derived from https://ascl.net/code/search/python
+This list below is an extraction from https://ascl.net/code/search/python
 What you see below is a first cut, and as you might read this draft,
 may well disappear in the final version.
 
@@ -138,3 +137,5 @@ command (but read their README for guidelines):
 
 Some packages will rely on you having a C compiler, and if that fails, it's better to find
 another package before spending too much time solving compiler and linked problems.
+There is also the danger that mixing **conda** and **pip** may mess up your python
+environment.
