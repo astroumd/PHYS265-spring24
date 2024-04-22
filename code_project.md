@@ -1,29 +1,29 @@
-# PHYS265 Code Project (draft-2)
-
-
+# PHYS265 Code Project (draft-3)
+ 
 This *Code Project* is an alternative to taking the 3rd midterm exam
-on May 1st.
-In this project you will select a (python based) open source project.
-It is your task to evaluate this software package by using it.
-**Due date will also be May 1st.**
+on May 1st.  In this project you will select a (python based) open
+source project.  It is your task to evaluate this software package by
+using it (not reproducing it) and writing a report.  **Due date will
+also be May 1st.**
 
 You will need to learn how to install and use it, show some results
-and some figures to illustrate your findings. All of this will be
-summarized in a report presented in PDF. You also need to keep your code
-examples, and a README to make your findings reproducable. We will use
-a new folder **code3** inside your existing github repository that
-you used for **lab1** and **lab2**.
+and one or more figures to illustrate your findings. All of this will
+be summarized in a report presented in PDF. You also need to show your
+code examples how you exercised the code, and a README file to make
+your findings reproducable. We will use a new folder **code3** inside
+your existing github repository that you used for **lab1** and
+**lab2**.
 
-You are welcome to suggest your own project, but you will need to
-run this by your instructors first. We also have our own list,
-some of them are listed below.
+You are welcome to suggest your own project, either way, discuss with
+your instructor which package you choose and you may get additional
+guidelines. You can find some suggestions in our list below.
 
 ## Writeup
 
 Some packages may not work well on Windows, and only on Mac or Linux. Some
 requires a lot of extra software, which make it too complex to install,
 or require a supercomputer.  Select something simple, and always run it
-by your instructors for approval.
+by your instructors for approval. 
 
 Some questions to answer:
 
@@ -47,7 +47,7 @@ of robust codes developed in other languages (mostly Fortran, IDL and C/C++).
 - geneology: LMFIT (original MINPACK-1), MPFIT (IDL), cmpfit (), pycmpfit (python)
 
 Your task is to find the python equivalent of MPFIT or LMFIT, and compare this
-to curve_fit().
+code to the curve_fit() procedure we used in class.
 
 Your instructors may give you a dataset to fit and compare results.
 
@@ -55,8 +55,7 @@ Your instructors may give you a dataset to fit and compare results.
 
 
 This list below is an extraction from https://ascl.net/code/search/python
-What you see below is a first cut, and as you might read this draft,
-may well disappear in the final version.
+some of these may well be too complex.
 
 - PDRT: Photo Dissociation Region Toolbox - https://ascl.net/1102.022
 
