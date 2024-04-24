@@ -1,15 +1,15 @@
-# PHYS265 Code Project (draft-4)
+# PHYS265 Code Project (draft-5)
  
 This *Code Project* is an alternative to taking the 3rd midterm exam
 on May 1st.  In this project you will select a (python based) open
 source project.  It is your task to evaluate this software package by
-using it (not reproducing it) and writing a report.  **Due date will
-also be May 1st.**
+using it (not reproducing it) and writing a report.
+**Due date will be Thursday, May 2nd, at the usual 11.59pm time**
 
 You will need to learn how to install and use it, show some results
 and one or more figures to illustrate your findings. All of this will
 be summarized in a report presented in PDF. You also need to show your
-code examples how you exercised the code, and a README file to make
+code example(s) how you exercised the code, and a README file to make
 your findings reproducable.
 
 NOTE: We will use a new folder **code3** inside your existing github
@@ -18,11 +18,11 @@ repository that you used for **lab1** and **lab2**.
 You are welcome to suggest your own project too, either way, discuss
 with your instructor which package you choose and you may get
 additional guidelines. You can find some suggestions in our list
-below.
+below extracted from ASCL and JOSS.
 
 ## Writeup
 
-Some packages may not work well on Windows, and only on Mac or Linux. Some
+Some packages may not work well on your particular computer. Some
 requires a lot of extra software, which make it too complex to install,
 or require a supercomputer.  Select something simple, and always run it
 by your instructors for approval. We do not want you to waste time getting
@@ -30,11 +30,12 @@ the package to run.
 
 Some questions to answer:
 
-- name of the package, anad what does the package do?
+- name of the package, and what does the package do?
 - how old is the package? what about its geneology?
 - is it still maintained, and by the original authors?
-- is the source code available?
 - evaluate how easy it was to install and use
+- is the source code available?
+- in your example, do you use the code, or do they use an interface (e.g. web, command line tool)
 - is it pure python? or does it need accompanying C/C++/Fortran code?
 - does it install via the "standard" pip/conda, or is it more complex?
 - what is the input to the package? Just parameters, or dataset(s)?
@@ -43,42 +44,27 @@ Some questions to answer:
 - does the package produce figures, or are you on your own? Is matplotlib used?
 - if you prefer to use a jupyter notebook instead of a python script, that's ok.
 
+
+
 ## Suggested projects
 
-### 1. Fitting
 
-Although our recommended fitting module is curve_fit(), much like
-we saw for quad() and solve_ivp() they are based on a long history
-of robust codes developed in other languages (mostly Fortran, IDL and C/C++).
-
-- geneology: LMFIT (original MINPACK-1), MPFIT (IDL), cmpfit (), pycmpfit (python)
-
-Your task is to find the python equivalent of MPFIT or LMFIT, and compare this
-code to the curve_fit() procedure we used in class.
-
-Your instructors may give you a dataset to fit and compare results.
-
-Notes:
-
-      # this fails on simple systems
-      pip install pycmpfit
-
-      # this seems ok:    https://github.com/lmfit/lmfit-py
-      pip install lmfit
-
-
-### 2. Browsing for "python" codes on ASCL
+### Browsing for "python" codes on ASCL
 
 
 This list below is an extraction from https://ascl.net/code/search/python
-(this list returns well over 600 codes)
-some of these may well be too complex.
+(this list returns well over 600 codes).
+Another option would be to
+browse JOSS ( https://joss.theoj.org/papers/search?q=python )
+the Journal of Open Source Software, also a sizeable list.
+
+Codes annotated with **[peter]** are codes that Peter uses from time to time.
 
 - PDRT: Photo Dissociation Region Toolbox - https://ascl.net/1102.022
 
   OK
 
-- PySpecKit: Python Spectroscopic Toolkit - https://ascl.net/1109.001
+- PySpecKit: Python Spectroscopic Toolkit - https://ascl.net/1109.001 **[peter]**
 
   OK
 
@@ -90,7 +76,9 @@ some of these may well be too complex.
 
   ok. no graphics here.
 
-- EzGal: A Flexible Interface for Stellar Population Synthesis Models - https://ascl.net/1208.021	
+- EzGal: A Flexible Interface for Stellar Population Synthesis Models - https://ascl.net/1208.021
+
+  ok, but no example fits file?
 
 - pNbody: A python parallelized N-body reduction toolbox - https://ascl.net/1302.004
 
@@ -130,7 +118,7 @@ some of these may well be too complex.
 
   Needs data.
 
-- galpy: Galactic dynamics package - https://ascl.net/1411.008
+- galpy: Galactic dynamics package - https://ascl.net/1411.008 **[peter]**
 
   ok
 
@@ -149,13 +137,14 @@ some of these may well be too complex.
 
 - POPPY: Physical Optics Propagation in PYthon - https://ascl.net/1602.018
 
-- Lmfit: Non-Linear Least-Square Minimization and Curve-Fitting for Python - https://ascl.net/1606.014
+- Lmfit: Non-Linear Least-Square Minimization and Curve-Fitting for Python - https://ascl.net/1606.014 **[peter]**
 
-  ok, good alternative to curve_fit()
+  ok, good alternative to curve_fit().  Here it would be interesting to show how you can fit something
+  with curve_fit() and lmfit.   Your instructors may give you a dataset to fit and compare results.
 
 - PRECESSION: Python toolbox for dynamics of spinning black-hole binaries - https://ascl.net/1611.004	
 
-- Gala: Galactic astronomy and gravitational dynamics -	https://ascl.net/1707.006
+- Gala: Galactic astronomy and gravitational dynamics -	https://ascl.net/1707.006   **[peter]**
 
 - PROFILER: 1D galaxy light profile decomposition - https://ascl.net/1705.010	
 
@@ -177,7 +166,7 @@ some of these may well be too complex.
 
   ok
 
-- seaborn: Statistical data visualization - https://ascl.net/2012.015	
+- seaborn: Statistical data visualization - https://ascl.net/2012.015	**[peter]**
 
 - Citlalicue: Create and manipulate stellar light curves - https://ascl.net/2202.014
 
@@ -189,22 +178,27 @@ some of these may well be too complex.
 
   Too compute intensive!!!
 
+- AMUSE: Astrophysical Multipurpose Software Environment - https://ascl.net/1107.007 **[peter]**
+
+  Most likely too large and complex, it's a python package talking to legacy codes to run a set
+  of simulations of different nature (n-body, stellar evolution, hydro dynamics etc.)   Has a sister
+  code called OMUSE.
+  
 ## Installation Guidelines
 
 Most python packages can be installed with pip.   Within spyder this would be the following
 command (but check the README file in the package for guidelines, sometimes a conda
-solution is given as well):
+solution is given as well), e.g.
 
-      !pip install ThePackage
+      !pip install galpy
 
 Some packages will rely on you having a C compiler, and if that fails, it's better to find
-another package before spending too much time solving compiler and linked problems.
+another package before spending too much time solving compiler and linker problems.
 There is also the danger that mixing **conda** and **pip** may mess up your python
 environment.
 
-
-If you have downloaded the package via git, you can also install it as ddeveloper, i.e. while you
+If have downloaded the source code via git, you can also install it as developer, i.e. while you
 would be editing their files, your modified code would be used!
 
-      git clone https://gitlab.in2p3.fr/ycopin/pyExtinction
-      pip install -e pyExtinction
+      git clone https://github.com/jobovy/galpy
+      pip install -e galpy
