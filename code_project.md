@@ -1,4 +1,4 @@
-# PHYS265 Code Project (draft-3)
+# PHYS265 Code Project (draft-4)
  
 This *Code Project* is an alternative to taking the 3rd midterm exam
 on May 1st.  In this project you will select a (python based) open
@@ -10,31 +10,38 @@ You will need to learn how to install and use it, show some results
 and one or more figures to illustrate your findings. All of this will
 be summarized in a report presented in PDF. You also need to show your
 code examples how you exercised the code, and a README file to make
-your findings reproducable. We will use a new folder **code3** inside
-your existing github repository that you used for **lab1** and
-**lab2**.
+your findings reproducable.
 
-You are welcome to suggest your own project, either way, discuss with
-your instructor which package you choose and you may get additional
-guidelines. You can find some suggestions in our list below.
+NOTE: We will use a new folder **code3** inside your existing github
+repository that you used for **lab1** and **lab2**.
+
+You are welcome to suggest your own project too, either way, discuss
+with your instructor which package you choose and you may get
+additional guidelines. You can find some suggestions in our list
+below.
 
 ## Writeup
 
 Some packages may not work well on Windows, and only on Mac or Linux. Some
 requires a lot of extra software, which make it too complex to install,
 or require a supercomputer.  Select something simple, and always run it
-by your instructors for approval. 
+by your instructors for approval. We do not want you to waste time getting
+the package to run.
 
 Some questions to answer:
 
 - name of the package, anad what does the package do?
 - how old is the package? what about its geneology?
 - is it still maintained, and by the original authors?
+- is the source code available?
+- evaluate how easy it was to install and use
 - is it pure python? or does it need accompanying C/C++/Fortran code?
 - does it install via the "standard" pip/conda, or is it more complex?
 - what is the input to the package? Just parameters, or dataset(s)?
 - what is the output of the package? Just parameters, or dataset(s)?
+- what (main) package does it use (e.g. numpy, curve_fit, solve_ivp)
 - does the package produce figures, or are you on your own? Is matplotlib used?
+- if you prefer to use a jupyter notebook instead of a python script, that's ok.
 
 ## Suggested projects
 
@@ -51,6 +58,15 @@ code to the curve_fit() procedure we used in class.
 
 Your instructors may give you a dataset to fit and compare results.
 
+Notes:
+
+      # this fails on simple systems
+      pip install pycmpfit
+
+      # this seems ok:    https://github.com/lmfit/lmfit-py
+      pip install lmfit
+
+
 ### 2. Browsing for "python" codes on ASCL
 
 
@@ -59,37 +75,68 @@ some of these may well be too complex.
 
 - PDRT: Photo Dissociation Region Toolbox - https://ascl.net/1102.022
 
-- PySpecKit: Python Spectroscopic Toolkit - https://ascl.net/1109.001	
+  OK
+
+- PySpecKit: Python Spectroscopic Toolkit - https://ascl.net/1109.001
+
+  OK
 
 - PyModelFit: Model-fitting Framework and GUI Tool - https://ascl.net/1109.010
 
-- PyEphem: Astronomical Ephemeris for Python - https://ascl.net/1112.014	
+  Seems only working in python2
+
+- PyEphem: Astronomical Ephemeris for Python - https://ascl.net/1112.014
+
+  ok. no graphics here.
 
 - EzGal: A Flexible Interface for Stellar Population Synthesis Models - https://ascl.net/1208.021	
 
-- pNbody: A python parallelized N-body reduction toolbox - https://ascl.net/1302.004	
+- pNbody: A python parallelized N-body reduction toolbox - https://ascl.net/1302.004
+
+  A general "pip install pnbody" did not work, but downloading from github and using
+
+         pip install ./pNbody
+
+  worked though.
 
 - corner.py: Corner plots - https://ascl.net/1702.002
 
 - emcee: The MCMC Hammer (possibly most used code) - https://ascl.net/1303.002	
 
+  Markov chain Monte Carlo (MCMC) Ensemble sampler - probably one of the most downloaded codes
+  used in papers. Together with the corner.py code, which plots up the covariance between
+  variables.
+
 - Aegean: Compact source finding in radio images - https://ascl.net/1212.009	
 
 - Galactus: Modeling and fitting of galaxies from neutral hydrogen (HI) cubes - https://ascl.net/1303.018
 
-- Astropy: Community Python library for astronomy - https://ascl.net/1304.002	
+- Astropy: Community Python library for astronomy - https://ascl.net/1304.002
 
-- AstroAsciiData: ASCII table Python module - https://ascl.net/1311.003	
+  ok.
+
+- AstroAsciiData: ASCII table Python module - https://ascl.net/1311.003
+
+  Only works with python2
 
 - SunPy: Python for Solar Physicists - https://ascl.net/1401.010		
 
 - pyExtinction: Atmospheric extinction - https://ascl.net/1403.002
 
-- Gammapy: Python toolbox for gamma-ray astronomy - https://ascl.net/1711.014	
+  It's still python2, why oh why
 
-- galpy: Galactic dynamics package - https://ascl.net/1411.008	
+- Gammapy: Python toolbox for gamma-ray astronomy - https://ascl.net/1711.014
 
-- PyBDSF: Python Blob Detection and Source Finder - https://ascl.net/1502.007	
+  Needs data.
+
+- galpy: Galactic dynamics package - https://ascl.net/1411.008
+
+  ok
+
+- PyBDSF: Python Blob Detection and Source Finder - https://ascl.net/1502.007
+
+  Needs fortran and boost, and some python packages. Source code has test image.
+  Invented their own "ipython" shell
 
 - pYSOVAR: Lightcurves analysis	- https://ascl.net/1503.008
 
@@ -101,7 +148,9 @@ some of these may well be too complex.
 
 - POPPY: Physical Optics Propagation in PYthon - https://ascl.net/1602.018
 
-- Lmfit: Non-Linear Least-Square Minimization and Curve-Fitting for Python - https://ascl.net/1606.014	
+- Lmfit: Non-Linear Least-Square Minimization and Curve-Fitting for Python - https://ascl.net/1606.014
+
+  ok, good alternative to curve_fit()
 
 - PRECESSION: Python toolbox for dynamics of spinning black-hole binaries - https://ascl.net/1611.004	
 
@@ -115,22 +164,35 @@ some of these may well be too complex.
 
 - Photon: Python tool for data plotting	- https://ascl.net/1901.007
 
-- oscode: Oscillatory ordinary differential equation solver - https://ascl.net/1908.012	
+  A regular "pip install" claimed versions were not matching, but a manual
+  "pip install -e ." in the source code worked, but then complains that
+  my matplotlib has no mplDeprecation attribute.
 
-- GWpy: Python package for studying data from gravitational-wave detectors - https://ascl.net/1912.016	
+- oscode: Oscillatory ordinary differential equation solver - https://ascl.net/1908.012
+
+  builds a wheel;   mimics solve_ivp()
+
+- GWpy: Python package for studying data from gravitational-wave detectors - https://ascl.net/1912.016
+
+  ok
 
 - seaborn: Statistical data visualization - https://ascl.net/2012.015	
 
-- Citlalicue: Create and manipulate stellar light curves - https://ascl.net/2202.014	
+- Citlalicue: Create and manipulate stellar light curves - https://ascl.net/2202.014
+
+  Lot of dependancies that were not listed (arviz, celerite, corner,. ...)
 
 - CosmosCanvas: Useful color maps for different astrophysical properties - https://ascl.net/2401.005	
 
-- CONCEPT: COsmological N-body CodE in PyThon - https://ascl.net/2306.035	
+- CONCEPT: COsmological N-body CodE in PyThon - https://ascl.net/2306.035
+
+  Too compute intensive!!!
 
 ## Installation Guidelines
 
 Most python packages can be installed with pip.   Within spyder this would be the following
-command (but read their README for guidelines):
+command (but check the README file in the package for guidelines, sometimes a conda
+solution is given as well):
 
       !pip install ThePackage
 
@@ -138,3 +200,10 @@ Some packages will rely on you having a C compiler, and if that fails, it's bett
 another package before spending too much time solving compiler and linked problems.
 There is also the danger that mixing **conda** and **pip** may mess up your python
 environment.
+
+
+If you have downloaded the package via git, you can also install it as ddeveloper, i.e. while you
+would be editing their files, your modified code would be used!
+
+      git clone https://gitlab.in2p3.fr/ycopin/pyExtinction
+      pip install -e pyExtinction
