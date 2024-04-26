@@ -1,5 +1,7 @@
-# PHYS265 Code Project (draft 6)
- 
+# PHYS265 Code Project (April 26, 2024)
+
+   See also: https://github.com/astroumd/PHYS265-spring24/blob/main/code_project.md
+   
 This *Code Project* is an alternative to taking the 3rd midterm exam
 on May 1st.  In this project you will select a (python based) open
 source project.  It is your task to evaluate this software package by
@@ -149,6 +151,8 @@ Codes annotated with **[peter]** are codes that Peter uses from time to time.
 
 - POPPY: Physical Optics Propagation in PYthon - https://ascl.net/1602.018
 
+  OK
+
 - Lmfit: Non-Linear Least-Square Minimization and Curve-Fitting for Python - https://ascl.net/1606.014 **[peter]**
 
   ok, good alternative to curve_fit().  Here it would be interesting to show how you can fit something
@@ -158,12 +162,20 @@ Codes annotated with **[peter]** are codes that Peter uses from time to time.
 
 - Gala: Galactic astronomy and gravitational dynamics -	https://ascl.net/1707.006   **[peter]**
 
-- PROFILER: 1D galaxy light profile decomposition - https://ascl.net/1705.010	
+  OK
 
+- PROFILER: 1D galaxy light profile decomposition - https://ascl.net/1705.010
+
+  Seems old by now. Indeed, it's python 2 only
+  
 - SETI-EC: SETI Encryption Code	- https://ascl.net/1803.009
+
+  A challenge!
 
 - pydftools: Distribution function fitting in Python - https://ascl.net/code/v/1940
 
+  OK
+  
 - Photon: Python tool for data plotting	- https://ascl.net/1901.007
 
   A regular "pip install" claimed versions were not matching, but a manual
@@ -184,7 +196,9 @@ Codes annotated with **[peter]** are codes that Peter uses from time to time.
 
   Lot of dependancies that were not listed (arviz, celerite, corner,. ...)
 
-- CosmosCanvas: Useful color maps for different astrophysical properties - https://ascl.net/2401.005	
+- CosmosCanvas: Useful color maps for different astrophysical properties - https://ascl.net/2401.005
+
+  OK
 
 - CONCEPT: COsmological N-body CodE in PyThon - https://ascl.net/2306.035
 
