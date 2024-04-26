@@ -1,4 +1,4 @@
-# PHYS265 Code Project (draft-5)
+# PHYS265 Code Project (draft 6)
  
 This *Code Project* is an alternative to taking the 3rd midterm exam
 on May 1st.  In this project you will select a (python based) open
@@ -10,17 +10,16 @@ You will need to learn how to install and use it, show some results
 and one or more figures to illustrate your findings. All of this will
 be summarized in a report presented in PDF. You also need to show your
 code example(s) how you exercised the code, and a README file to make
-your findings reproducable.
+your findings reproducable. Please name and date your report!
 
-NOTE: We will use a new folder **code3** inside your existing github
-repository that you used for **lab1** and **lab2**.
+NOTE: We submit on github, and you will use a new folder **code3**
+inside your existing github repository that you used for **lab1** and
+**lab2**.
 
-You are welcome to suggest your own project too, either way, discuss
+You are welcome to suggest your own project too. Either way, discuss
 with your instructor which package you choose and you may get
-additional guidelines. You can find some suggestions in our list
-below extracted from ASCL and JOSS.
-
-## Writeup
+additional guidelines. You can find some suggestions in our list below
+extracted from ASCL and JOSS.
 
 Some packages may not work well on your particular computer. Some
 requires a lot of extra software, which make it too complex to install,
@@ -28,45 +27,44 @@ or require a supercomputer.  Select something simple, and always run it
 by your instructors for approval. We do not want you to waste time getting
 the package to run.
 
-Some questions to answer:
+Some questions to answer in your report:
 
 - name of the package, and what does the package do?
-- how old is the package? what about its geneology?
+- how old is the package? does it have a geneology?
 - is it still maintained, and by the original authors?
 - evaluate how easy it was to install and use
-- is the source code available?
-- in your example, do you use the code, or do they use an interface (e.g. web, command line tool)
+- is the source code available? (this should be a given)
+- in your example, do you use python code, or do they use an interface (e.g. web, command line tool)
 - is it pure python? or does it need accompanying C/C++/Fortran code?
 - does it install via the "standard" pip/conda, or is it more complex?
 - what is the input to the package? Just parameters, or dataset(s)?
 - what is the output of the package? Just parameters, or dataset(s)?
-- what (main) package does it use (e.g. numpy, curve_fit, solve_ivp)
+- does the code provide any unit tests, regression or benchmarking?
+- how can you feel confident the code produce a reliable result? (see previous question)
+- what (main) python package(s) does it use (e.g. numpy, curve_fit, solve_ivp)
 - does the package produce figures, or are you on your own? Is matplotlib used?
 - if you prefer to use a jupyter notebook instead of a python script, that's ok.
-
+- if you used this code in a paper, do they give a preferred citation method?
 
 
 ## Suggested projects
 
-
-### Browsing for "python" codes on ASCL
-
-
-This list below is an extraction from https://ascl.net/code/search/python
-(this list returns well over 600 codes).
-Another option would be to
-browse JOSS ( https://joss.theoj.org/papers/search?q=python )
-the Journal of Open Source Software, also a sizeable list.
+This list below is an extraction from
+https://ascl.net/code/search/python (a full list returns well over 600
+codes).  Another option would be to browse JOSS (
+https://joss.theoj.org/papers/search?q=python ) the Journal of Open
+Source Software, also a sizeable list, but none of those are reported
+below.
 
 Codes annotated with **[peter]** are codes that Peter uses from time to time.
 
 - PDRT: Photo Dissociation Region Toolbox - https://ascl.net/1102.022
 
-  OK
+  This package was written by two astronomers at UMD
 
 - PySpecKit: Python Spectroscopic Toolkit - https://ascl.net/1109.001 **[peter]**
 
-  OK
+  Fitting spectral lines
 
 - PyModelFit: Model-fitting Framework and GUI Tool - https://ascl.net/1109.010
 
@@ -90,15 +88,21 @@ Codes annotated with **[peter]** are codes that Peter uses from time to time.
 
 - corner.py: Corner plots - https://ascl.net/1702.002
 
+  Together with emcee a very popular package in the literature. Explores the covariant matrix graphically.
+
 - emcee: The MCMC Hammer (possibly most used code) - https://ascl.net/1303.002	
 
   Markov chain Monte Carlo (MCMC) Ensemble sampler - probably one of the most downloaded codes
   used in papers. Together with the corner.py code, which plots up the covariance between
   variables.
 
-- Aegean: Compact source finding in radio images - https://ascl.net/1212.009	
+- Aegean: Compact source finding in radio images - https://ascl.net/1212.009
+
+  Although python, more command line driven code
 
 - Galactus: Modeling and fitting of galaxies from neutral hydrogen (HI) cubes - https://ascl.net/1303.018
+
+  complex build system, needs c++ and boost.
 
 - Astropy: Community Python library for astronomy - https://ascl.net/1304.002
 
@@ -129,11 +133,19 @@ Codes annotated with **[peter]** are codes that Peter uses from time to time.
 
 - pYSOVAR: Lightcurves analysis	- https://ascl.net/1503.008
 
-- PyTransit: Transit light curve modeling - https://ascl.net/1505.024	
+  very author specific
+
+- PyTransit: Transit light curve modeling - https://ascl.net/1505.024
+
+  OK
 
 - pyro: Python-based tutorial for computational methods for hydrodynamics - https://ascl.net/1507.018
 
+  Regular pip install didn't work, but from source it did.
+
 - SavGolFilterCov: Savitzky Golay filter for data with error covariance	- https://ascl.net/1601.012
+
+  Just a code from a paper. no pip.
 
 - POPPY: Physical Optics Propagation in PYthon - https://ascl.net/1602.018
 
@@ -202,3 +214,6 @@ would be editing their files, your modified code would be used!
 
       git clone https://github.com/jobovy/galpy
       pip install -e galpy
+
+There were a few packages where the regular pip install did not work, but a source install like this
+did work. go figure.
