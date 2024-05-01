@@ -6,3 +6,13 @@
 
 My advice is to use the Hbeta line.
 
+A good model would be:
+
+    a+b*exp(-(x-c)^2/(2*d^2)):
+
+where
+
+ a   baseline flux
+ b   peak of gauss
+ c   location of gauss
+ d   with of gauss
