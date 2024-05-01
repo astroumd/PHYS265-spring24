@@ -32,7 +32,7 @@ the package to run.
 Some questions to answer in your report:
 
 - name of the package, and what does the package do?
-- how old is the package? does it have a geneology?
+- how old is the package? does it have a geneology, i.e. what came before or after, what codes are related etc.
 - is it still maintained, and by the original authors?
 - evaluate how easy it was to install and use
 - is the source code available? (this should be a given)
