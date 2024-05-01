@@ -51,12 +51,16 @@ for power users with fast fingers.
    successive versions of the files.
 
 3. Create your own new repo for Lab1, and add a README file from the menu. Or create one later.
-   Suggested name is **PHYS265-spring24-lab1**,   but feel free to pick any name.
+   Strongly suggested to name this **PHYS265-spring24-labs**,   and
    When asked, pick a private repo.
 
 4. Modify the README file, and put your name in it.  Upload this file back to github but first committing
    it to the **main** branch (blue button bottom left), after which on the right side you will see your
    pending actions, in this case **Push Origin**.
+
+4. Your work (labs, coding) will be done within sub-folders.  Do not create a new github repo for each
+   problem. Do not use branches either, unless you known how to deal with them. You instructors will only
+   look at the main branch.
 
 5. Since your repo is private, you'll need to give permission to the graders to read your code. Do this
    from the web interface of your repo:
