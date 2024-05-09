@@ -12,7 +12,8 @@
 
       a = [1, 2.0, 'c']         b = (1, 2.0, 'c')
       len(a)                    len(b)
-      a[]   .pop .append
+      a.append(4j)
+      a.pop()
       
 
 
@@ -42,21 +43,26 @@
       plt.clf(1)                                     return x**2 + y**2 + a
       plt.plot(x,y,'ko-', label="one")            xx = np.linspace(-1,1,21)
       plt.scatter(x,y)                            yy = np.linspace(-1,1,21)
-      plt.legend()                                xm, ym = np.meshgrid(xx,yy)
-      plt.savefig('myplot.png')                   zm = func2(xm,ym)
+      plt.hist(r, bins=20)                        xm, ym = np.meshgrid(xx,yy)
+      plt.legend()                                zm = func2(xm,ym)
+      plt.savefig('myplot.png')                   for j in range(21):
+						     for i in range(21):
+						        zm[j,i] = func2(xm[i],ym[j])
                                                   plt.contour(xm,ym,zm)
 
 ## Integrating
 
 
       def f1(x, m=1, b=0):           f2 = lambda x: x**2      def deriv(t, s):
-         return x*m + b                                          D = np.zeros(len(s))
+         return x*m + b                                          # s[0] = position
+                                                                 # s[1] = velocity
+                                                                 D = np.zeros(len(s))
                                                                  D[0] = s[1]
                                                                  D[1] = -9.8 * s[0]
                                                                  return D
 								 
 
-      int, err = scipy.integrate.quad(f1, 0.0, 4.0, args=(2.0, 1.0))
+      integral, err = scipy.integrate.quad(f1, 0.0, 4.0, args=(2.0, 1.0))
 
       sol = scipy.integrate.solve_ivp(deriv, (t0, t1), [x0, v0])
       print(sol.t, sol.y[0])
