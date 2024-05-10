@@ -4,7 +4,7 @@
 
       if <boolean>:         for i in range(10):                     print(f"The value of n={n} and x={f:.3}")
          print('1')            print(i)                             def mysqr(x, a=1):
-      elif <boolean>:       for i,c in enumerate(['a','b','c']:       return a*x*x
+      elif <boolean>:       for i,c in enumerate(['a','b','c']:        return a*x*x
          print('2')            print(i,c)
       else                  while <boolean>:
          print('3')            do_something()
@@ -12,11 +12,10 @@
 
       a = [1, 2.0, 'c']         b = (1, 2.0, 'c')
       len(a)                    len(b)
+      a[1]                      b[1]
       a.append(4j)
       a.pop()
       
-
-
 ##  Numpy
 
       import numpy as np
@@ -26,14 +25,13 @@
       c = np.linspace(0,10,101)          C = np.transpose(B)                   np.cross(x,y)
       d = np.arange(0,10,0.5)                                
 
-      r = np.random.normal(10.0,1.0,100)
-      len(r)
-      r.mean()
+      r = np.random.normal(10.0,1.0,100)       columns = np.loadtxt('mytable.txt').T
+      len(r)                                   ncolumns = len(columns)
+      r.mean()                                 columns[0].mean()
       r.std()
       r.sum()
       r.min()
       r.max()
-
 
 ## Plotting
 
@@ -46,11 +44,14 @@
       plt.hist(r, bins=20)                        xm, ym = np.meshgrid(xx,yy)
       plt.legend()                                zm = func2(xm,ym)
       plt.savefig('myplot.png')                   for j in range(21):
-						     for i in range(21):
-						        zm[j,i] = func2(xm[i],ym[j])
+                                                     for i in range(21):
+                                                        zm[j,i] = func2(xm[i],ym[j])
                                                   plt.contour(xm,ym,zm)
 
 ## Integrating
+
+      from scipy.integrate import quad
+      from scipy.integrate import solve_ivp
 
 
       def f1(x, m=1, b=0):           f2 = lambda x: x**2      def deriv(t, s):
@@ -62,14 +63,17 @@
                                                                  return D
 								 
 
-      integral, err = scipy.integrate.quad(f1, 0.0, 4.0, args=(2.0, 1.0))
+      integral, err = quad(f1, 0.0, 4.0, args=(2.0, 1.0))
 
-      sol = scipy.integrate.solve_ivp(deriv, (t0, t1), [x0, v0])
+      sol = solve_ivp(deriv, (t0, t1), [x0, v0])
       print(sol.t, sol.y[0])
 
 ## Fitting
+      from scipy.optimize import curve_fit
+      from scipy.optimize import fsolve
+      from scipy.optimize import brentq
 
-      params, covar = scipy.optimize.curve_fit(f1, xx, yy, p0)
+      params, covar = curve_fit(f1, xx, yy, p0)
       par1 = params[0]
       err1 = np.sqrt(covar[0][0])
 
@@ -79,7 +83,7 @@
       scipy.linalg.inv(A)
       scipy.linalg.solve(A,b)
 
-      root = scipy.optimize.fsolve(f1, x0, args=(2.0,1.0))
-      root = scipy.optimize.brentq(f1, x0, x1, args=(2.0,1.0))
+      root = fsolve(f1, x0, args=(2.0,1.0))
+      root = brentq(f1, x0, x1, args=(2.0,1.0))
 
 
