@@ -1,4 +1,4 @@
-# PHYS265 python - draft cheatsheet
+# PHYS265 python - version 1 (may 2024)
 
 ##  Python
 
@@ -53,35 +53,36 @@
       from scipy.integrate import quad
       from scipy.integrate import solve_ivp
 
-
-      def f1(x, m=1, b=0):           f2 = lambda x: x**2      def deriv(t, s):
+      def f1(x, m=1, b=0):           f2 = lambda x: x**2      def deriv(t, s, drag=0):
          return x*m + b                                          # s[0] = position
                                                                  # s[1] = velocity
                                                                  D = np.zeros(len(s))
                                                                  D[0] = s[1]
-                                                                 D[1] = -9.8 * s[0]
+                                                                 D[1] = -9.8 * s[0] - drag * s[1]
                                                                  return D
-								 
 
       integral, err = quad(f1, 0.0, 4.0, args=(2.0, 1.0))
 
-      sol = solve_ivp(deriv, (t0, t1), [x0, v0])
+      sol = solve_ivp(deriv, (t0, t1), [x0, v0], args=(0.1,))
       print(sol.t, sol.y[0])
 
 ## Fitting
+
       from scipy.optimize import curve_fit
       from scipy.optimize import fsolve
       from scipy.optimize import brentq
+      from scipy import linalg
+      import scipy.stats as st
 
       params, covar = curve_fit(f1, xx, yy, p0)
       par1 = params[0]
       err1 = np.sqrt(covar[0][0])
 
-      scipy.stats.chi2.pdf()
-      scipy.stats.chi2.sf(chisq, ndof)
+      st.chi2.pdf()
+      st.chi2.sf(chisq, ndof)
 
-      scipy.linalg.inv(A)
-      scipy.linalg.solve(A,b)
+      linalg.inv(A)
+      linalg.solve(A,b)
 
       root = fsolve(f1, x0, args=(2.0,1.0))
       root = brentq(f1, x0, x1, args=(2.0,1.0))
