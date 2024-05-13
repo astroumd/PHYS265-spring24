@@ -4,7 +4,7 @@
 
       if <boolean>:         for i in range(10):                     print(f"The value of n={n} and x={f:.3}")
          print('1')            print(i)                             def mysqr(x, a=1):
-      elif <boolean>:       for i,c in enumerate(['a','b','c']:        return a*x*x
+      elif <boolean>:       for i,c in enumerate(['a','b','c']):       return a*x*x
          print('2')            print(i,c)
       else                  while <boolean>:
          print('3')            do_something()
